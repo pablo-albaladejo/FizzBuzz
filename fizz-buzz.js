@@ -1,3 +1,5 @@
-module.exports = (number) => {
-    return Array(number);
+module.exports = {
+    run: (number) => {
+        return Array(number);
+    }
 }

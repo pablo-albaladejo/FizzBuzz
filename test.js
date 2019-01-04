@@ -10,7 +10,7 @@ describe('FizzBuzz', () => {
     });
 
     it('should return a list with proper size', () => {
-        const list = fizzBuzz(listSize);
+        const list = fizzBuzz.run(listSize);
         expect(list.length).to.equal(listSize);
     });
 
