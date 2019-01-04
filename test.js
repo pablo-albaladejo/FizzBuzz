@@ -30,7 +30,48 @@ describe('isMulipleOf', () => {
     });
 })
 
+describe('Fizz', () => {
+    it('should return true to 3', () => {
+        const result = fizzBuzz.isFizz(3);
+        expect(result).to.equal(true);
+    });
+
+    it('should return false to 5', () => {
+        const result = fizzBuzz.isFizz(5);
+        expect(result).to.equal(false);
+    });
+})
+
+describe('Buzz', () => {
+    it('should return false to 3', () => {
+        const result = fizzBuzz.isBuzz(3);
+        expect(result).to.equal(false);
+    });
+
+    it('should return true to 5', () => {
+        const result = fizzBuzz.isBuzz(5);
+        expect(result).to.equal(true);
+    });
+})
+
 describe('FizzBuzz', () => {
+    it('should return false to 3', () => {
+        const result = fizzBuzz.isFizzBuzz(3);
+        expect(result).to.equal(false);
+    });
+
+    it('should return false to 5', () => {
+        const result = fizzBuzz.isFizzBuzz(5);
+        expect(result).to.equal(false);
+    });
+
+    it('should return true to 15', () => {
+        const result = fizzBuzz.isFizzBuzz(15);
+        expect(result).to.equal(true);
+    });
+})
+
+describe('All', () => {
 
     it('should return a list with proper size', () => {
         const list = fizzBuzz.run(listSize);

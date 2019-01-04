@@ -10,20 +10,14 @@ const isMulipleOf = (base, number) => {
     return number % base === 0;
 }
 
-const getValue = (number) => {
-    if (isMulipleOf(number, 15)) {
-        return 'FizzBuzz'
-    } else if (isMulipleOf(number, 3)) {
-        return 'Fizz'
-    } else if (isMulipleOf(number, 5)) {
-        return 'Buzz'
-    } else {
-        return number;
-    }
-}
+const isFizz = (number) => isMulipleOf(number, 3)
+const isBuzz = (number) => isMulipleOf(number, 5)
+const isFizzBuzz = (number) => isFizz(number) && isBuzz(number)
 
 module.exports = {
-    getValue,
+    isFizz,
+    isBuzz,
+    isFizzBuzz,
     run,
     isMulipleOf,
 }
