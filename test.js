@@ -40,6 +40,11 @@ describe('Fizz', () => {
         const result = fizzBuzz.isFizz(5);
         expect(result).to.equal(false);
     });
+
+    it('should return true to 6', () => {
+        const result = fizzBuzz.isFizz(6);
+        expect(result).to.equal(true);
+    });
 })
 
 describe('Buzz', () => {
@@ -50,6 +55,11 @@ describe('Buzz', () => {
 
     it('should return true to 5', () => {
         const result = fizzBuzz.isBuzz(5);
+        expect(result).to.equal(true);
+    });
+
+    it('should return true to 10', () => {
+        const result = fizzBuzz.isBuzz(10);
         expect(result).to.equal(true);
     });
 })

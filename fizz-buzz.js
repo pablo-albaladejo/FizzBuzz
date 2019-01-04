@@ -1,3 +1,18 @@
+const isMulipleOf = (base, number) => {
+    return number % base === 0;
+}
+
+const isFizz = (number) => isMulipleOf(3, number)
+const isBuzz = (number) => isMulipleOf(5, number)
+const isFizzBuzz = (number) => isFizz(number) && isBuzz(number)
+
+const getValue = (number) => {
+    if (isFizz(number)) return 'Fizz'
+    if (isBuzz(number)) return 'Buzz'
+    if (isFizzBuzz(number)) return 'FizzBuzz'
+    return number
+}
+
 const run = (number) => {
     let list = [];
     for (i = 0; i < number; i++) {
@@ -5,14 +20,6 @@ const run = (number) => {
     };
     return list;
 }
-
-const isMulipleOf = (base, number) => {
-    return number % base === 0;
-}
-
-const isFizz = (number) => isMulipleOf(number, 3)
-const isBuzz = (number) => isMulipleOf(number, 5)
-const isFizzBuzz = (number) => isFizz(number) && isBuzz(number)
 
 module.exports = {
     isFizz,
