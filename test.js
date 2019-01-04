@@ -137,4 +137,19 @@ describe('All', () => {
         expect(result).to.equal(true);
     });
 
+    it('should have proper values', () => {
+        const result = fizzBuzz.run(listSize);
+        
+        expect(result[1]).to.equal(1);
+        expect(result[2]).to.equal(2);
+        expect(result[3]).to.equal('Fizz');
+        expect(result[5]).to.equal('Buzz');
+        expect(result[11]).to.equal(11);
+        expect(result[15]).to.equal('FizzBuzz');
+        expect(result[17]).to.equal(17);
+        expect(result[24]).to.equal('Fizz');
+        expect(result[25]).to.equal('Buzz');
+        expect(result[30]).to.equal('FizzBuzz');
+    });
+
 });

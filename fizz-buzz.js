@@ -16,7 +16,7 @@ const getValue = (number) => {
 const run = (number) => {
     let list = [];
     for (i = 0; i < number; i++) {
-        list[i] = i + 1;
+        list[i] = getValue(i);
     };
     return list;
 }
