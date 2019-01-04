@@ -13,30 +13,36 @@ describe('FizzBuzz', () => {
         const list = fizzBuzz.run(listSize);
         expect(list.length).to.equal(listSize);
     });
-    
+
     it('6 is multple of 3', () => {
-        const result = fizzBuzz.isMulipleOf(3,6);
+        const result = fizzBuzz.isMulipleOf(3, 6);
         expect(result).to.equal(true);
     });
 
     it('7 is not multple of 3', () => {
-        const result = fizzBuzz.isMulipleOf(3,7);
+        const result = fizzBuzz.isMulipleOf(3, 7);
         expect(result).to.equal(false);
     });
 
     it('10 is multiple of 5', () => {
-      const result = fizzBuzz.isMulipleOf(5,10);
-      expect(result).to.equal(true);
+        const result = fizzBuzz.isMulipleOf(5, 10);
+        expect(result).to.equal(true);
     });
 
     it('11 is not multiple of 5', () => {
-      const result = fizzBuzz.isMulipleOf(5, 11);
-      expect(result).to.equal(false);
+        const result = fizzBuzz.isMulipleOf(5, 11);
+        expect(result).to.equal(false);
     });
 
     it('15 is multiple of 15', () => {
-      const result = fizzBuzz.isMulipleOf(15,15);
-      expect(result).to.equal(true);
-    });        
+        const result = fizzBuzz.isMulipleOf(15, 15);
+        expect(result).to.equal(true);
+    });
+
+    it('should have not empty values', () => {
+        const list = fizzBuzz.run(listSize);
+        const result = list.reduce((accum, val) => typeof val !== undefined && accum, true);
+        expect(result).to.equal(true);
+    });
 
 });
