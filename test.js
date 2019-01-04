@@ -4,15 +4,14 @@ const fizzBuzz = require('./fizz-buzz.js');
 const listSize = 100;
 
 describe('FizzBuzz', () => {
-	
-	beforeEach(() => {
 
-	});
+    beforeEach(() => {
 
-	it('should return a list with proper size', () => {
+    });
+
+    it('should return a list with proper size', () => {
         const list = fizzBuzz(listSize);
-        
-		expect(list.length).to.equal(listSize);
-	});
+        expect(list.length).to.equal(listSize);
+    });
 
 });
