@@ -7,9 +7,9 @@ const isBuzz = (number) => isMulipleOf(5, number)
 const isFizzBuzz = (number) => isFizz(number) && isBuzz(number)
 
 const getValue = (number) => {
+    if (isFizzBuzz(number)) return 'FizzBuzz'
     if (isFizz(number)) return 'Fizz'
     if (isBuzz(number)) return 'Buzz'
-    if (isFizzBuzz(number)) return 'FizzBuzz'
     return number
 }
 
@@ -25,6 +25,7 @@ module.exports = {
     isFizz,
     isBuzz,
     isFizzBuzz,
+    getValue,
     run,
     isMulipleOf,
 }

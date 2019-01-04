@@ -81,6 +81,49 @@ describe('FizzBuzz', () => {
     });
 })
 
+describe('getValue', () => {
+    it('should return 1 to 1', () => {
+        const result = fizzBuzz.getValue(1);
+        expect(result).to.equal(1);
+    });
+
+    it('should return 2 to 2', () => {
+        const result = fizzBuzz.getValue(2);
+        expect(result).to.equal(2);
+    });
+
+    it('should return Fizz to 3', () => {
+        const result = fizzBuzz.getValue(3);
+        expect(result).to.equal('Fizz');
+    });
+
+    it('should return Buzz to 5', () => {
+        const result = fizzBuzz.getValue(5);
+        expect(result).to.equal('Buzz');
+    });
+
+    it('should return 11 to 11', () => {
+        const result = fizzBuzz.getValue(11);
+        expect(result).to.equal(11);
+    });
+
+    it('should return FizzBuzz to 15', () => {
+        const result = fizzBuzz.getValue(15);
+        expect(result).to.equal('FizzBuzz');
+    });
+
+    it('should return 17 to 17', () => {
+        const result = fizzBuzz.getValue(17);
+        expect(result).to.equal(17);
+    });
+
+    it('should return FizzBuzz to 30', () => {
+        const result = fizzBuzz.getValue(30);
+        expect(result).to.equal('FizzBuzz');
+    });
+
+})
+
 describe('All', () => {
 
     it('should return a list with proper size', () => {
