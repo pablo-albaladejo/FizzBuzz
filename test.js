@@ -25,16 +25,18 @@ describe('FizzBuzz', () => {
     });
 
     it('10 is multiple of 5', () => {
-      const result = fizzBuzz.isMulipleOf(3,7);
-        expect(result).to.equal(false);
+      const result = fizzBuzz.isMulipleOf(5,10);
+      expect(result).to.equal(true);
     });
 
     it('11 is not multiple of 5', () => {
-
+      const result = fizzBuzz.isMulipleOf(5, 11);
+      expect(result).to.equal(false);
     });
 
     it('15 is multiple of 15', () => {
-      
+      const result = fizzBuzz.isMulipleOf(15,15);
+      expect(result).to.equal(true);
     });        
 
 });
