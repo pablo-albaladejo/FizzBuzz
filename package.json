@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha --reporter spec './test.js'"
+		"test": "mocha --reporter spec './test.js' -w"
 	},
 	"repository": {
 		"type": "git",
@@ -19,7 +19,6 @@
 	"devDependencies": {
 		"debug": "^4.1.0",
 		"expect.js": "^0.3.1",
-		"mocha": "^5.2.0",
-		"chai": "*"
+		"mocha": "^5.2.0"
 	}
 }
