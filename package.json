@@ -1,0 +1,25 @@
+{
+	"name": "fizz-buzz",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha --reporter spec './test.js'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pablo-albaladejo/fizz-buzz.git"
+	},
+	"author": "Pablo Albaladejo Mestre <pablo.albaladejo.mestre@gmail.com> (https://github.com/pablo-albaladejo)",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pablo-albaladejo/fizz-buzz/issues"
+	},
+	"homepage": "https://github.com/pablo-albaladejo/fizz-buzz#readme",
+	"devDependencies": {
+		"debug": "^4.1.0",
+		"expect.js": "^0.3.1",
+		"mocha": "^5.2.0",
+		"chai": "*"
+	}
+}
