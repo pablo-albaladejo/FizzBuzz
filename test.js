@@ -3,17 +3,7 @@ const fizzBuzz = require('./fizz-buzz.js');
 
 const listSize = 100;
 
-describe('FizzBuzz', () => {
-
-    beforeEach(() => {
-
-    });
-
-    it('should return a list with proper size', () => {
-        const list = fizzBuzz.run(listSize);
-        expect(list.length).to.equal(listSize);
-    });
-
+describe('isMulipleOf', () => {
     it('6 is multple of 3', () => {
         const result = fizzBuzz.isMulipleOf(3, 6);
         expect(result).to.equal(true);
@@ -37,6 +27,14 @@ describe('FizzBuzz', () => {
     it('15 is multiple of 15', () => {
         const result = fizzBuzz.isMulipleOf(15, 15);
         expect(result).to.equal(true);
+    });
+})
+
+describe('FizzBuzz', () => {
+
+    it('should return a list with proper size', () => {
+        const list = fizzBuzz.run(listSize);
+        expect(list.length).to.equal(listSize);
     });
 
     it('should have not empty values', () => {
