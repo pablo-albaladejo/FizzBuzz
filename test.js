@@ -4,12 +4,12 @@ const fizzBuzz = require('./fizz-buzz.js');
 const listSize = 100;
 
 describe('isMulipleOf', () => {
-    it('6 is multple of 3', () => {
+    it('6 is multiple of 3', () => {
         const result = fizzBuzz.isMulipleOf(3, 6);
         expect(result).to.equal(true);
     });
 
-    it('7 is not multple of 3', () => {
+    it('7 is not multiple of 3', () => {
         const result = fizzBuzz.isMulipleOf(3, 7);
         expect(result).to.equal(false);
     });
